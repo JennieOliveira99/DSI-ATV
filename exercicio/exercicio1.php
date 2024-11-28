@@ -6,17 +6,18 @@ a Zero".
 
 */
 
-//usando STDIN para reeber o que o user digita
+//usando fgets(STDIN) para ler o que o user digita no terminal
+//trim() remove espaços em branco como enter etc(limpar entrada de dados)
 echo "Digite um número: ";
 $numero = trim(fgets(STDIN));  
 
 
 if ($numero > 0) {
-    echo "Valor Positivo\n";
+    echo "Valor Positivo";
 } elseif ($numero < 0) {
-    echo "Valor Negativo\n";
+    echo "Valor Negativo";
 } else {
-    echo "Igual a Zero\n";
+    echo "Igual a Zero";
 }
 
 
